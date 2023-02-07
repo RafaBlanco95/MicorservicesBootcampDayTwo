@@ -1,5 +1,7 @@
 package com.everis.bootcamp.productservice.dto;
 
+import io.github.resilience4j.retry.annotation.Retry;
+
 public class Product {
 	private String productId;
 
@@ -10,7 +12,7 @@ public class Product {
 	public String getProductId() {
 		return productId;
 	}
-
+	
 	public void setProductId(String productId) {
 		this.productId = productId;
 	}

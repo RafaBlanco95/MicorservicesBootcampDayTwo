@@ -2,6 +2,8 @@ package com.everis.bootcamp.productservice.dto;
 
 import java.math.BigDecimal;
 
+
+
 public class Prices {
 
 	private Integer id;
