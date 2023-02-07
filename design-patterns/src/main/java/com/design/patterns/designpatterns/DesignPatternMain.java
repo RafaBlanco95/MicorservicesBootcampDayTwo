@@ -17,7 +17,7 @@ public class DesignPatternMain
 	
 
 	public static void main(String[] args) {
-		SpringApplication.run(MainPrototype.class, args);
+		SpringApplication.run(DesignPatternMain.class, args);
 		// Person Rafa=Person.getInstance();
         // Rafa.setName("Rafa");
     
@@ -39,7 +39,7 @@ public class DesignPatternMain
     	
     	PersonI personI2= new Decorator(personI);
     	
-    	personI2.getName();
+    	System.out.println(personI2.getName());
 	}
 }
     
