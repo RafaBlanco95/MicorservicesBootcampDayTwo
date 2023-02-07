@@ -1,18 +1,24 @@
 package com.design.patterns.designpatterns;
 
-import com.design.patterns.designpatterns.builder.Person;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.design.patterns.designpatterns.decorator.Decorator;
+//import com.design.patterns.designpatterns.builder.Person;
 //import com.design.patterns.designpatterns.singleton.Person;
 //import com.design.patterns.designpatterns.prototype.Person;
+import com.design.patterns.designpatterns.decorator.Person;
+import com.design.patterns.designpatterns.decorator.PersonI;
+import com.design.patterns.designpatterns.prototype.MainPrototype;
 
-
+@SpringBootApplication
 public class DesignPatternMain 
 {
-    public static void main( String[] args )
-    {
-        
-    
-    	// Person Rafa=Person.getInstance();
+	
+
+	public static void main(String[] args) {
+		SpringApplication.run(MainPrototype.class, args);
+		// Person Rafa=Person.getInstance();
         // Rafa.setName("Rafa");
     
     	/*
@@ -23,9 +29,28 @@ public class DesignPatternMain
     	Person Rafa2=Rafa.clone();
     	 */
     	
-    	Person Rafa= new Person();
+    	//Person Rafa= new Person();
     	
-    	Rafa.builder().age(27).name("Rafael").build();
+    	//Rafa.builder().age(27).name("Rafael").build();
     	
-    }
+    
+    	PersonI personI= new Person();
+    	personI.setName("Interfaz");
+    	
+    	PersonI personI2= new Decorator(personI);
+    	
+    	personI2.getName();
+	}
 }
+    
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    
+
