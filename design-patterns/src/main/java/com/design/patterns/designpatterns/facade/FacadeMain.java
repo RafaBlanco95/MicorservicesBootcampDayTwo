@@ -3,7 +3,7 @@ package com.design.patterns.designpatterns.facade;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.design.patterns.designpatterns.prototype.MainPrototype;
+
 
 @SpringBootApplication
 public class FacadeMain {

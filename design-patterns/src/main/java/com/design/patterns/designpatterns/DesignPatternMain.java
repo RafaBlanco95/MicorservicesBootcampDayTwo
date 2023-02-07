@@ -9,7 +9,7 @@ import com.design.patterns.designpatterns.decorator.Decorator;
 //import com.design.patterns.designpatterns.prototype.Person;
 import com.design.patterns.designpatterns.decorator.Person;
 import com.design.patterns.designpatterns.decorator.PersonI;
-import com.design.patterns.designpatterns.prototype.MainPrototype;
+
 
 @SpringBootApplication
 public class DesignPatternMain 
