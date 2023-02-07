@@ -13,7 +13,6 @@ public class ChainMain {
 		
 		
 		Unidad capi=new Unidad("Capitán");
-		
 		Unidad comandante= new Unidad("Comandante");
 		capi.estableceMando(comandante);
 		Unidad soldado= new Unidad("Soldado");
